@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel = "stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    
+    <header>
+        <div class="container">
+            
+            <img class="logo" src="imagenes/logo.jpg">
+            <h1 class="titulo">Encriptador/Desencriptador de textos</h1>
+        </div>
+    </header>
+
+    <main class="fondo">
+        <section class="mensajeIngresado">
+            <div class="ingresado">
+                <textarea id="texto-ingresado" cols="70" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+                <img src="imagenes/atencion.png" alt="atencion" class="atencion">
+                <p>Solo letras minusculas y sin acentos</p>
+               
+                <div class="btn">
+                    <button class="btn" id="encriptar">Encriptar</button> 
+                    <button class="btn" id="desencriptar">Desencriptar</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="mensajeProcesado">
+            <div class="procesar">
+                <div id="procesado"></div>
+                <div class="imagen-mensaje">
+                    <img src="imagenes/Munheco.png" class="munheco">
+                    <h4>Ningún mensaje fue encontrado</h4>
+                </div> 
+                <button class="btn" id="copiar">Copiar</button>   
+            </div>
+        
+    </main>
+    <footer class="footer">
+        <p class="copyright">&copy Copyright Yurlian Sivira 2022</p>
+    </footer>
+    
+    <script src="js/encriptar.js"></script> 
+    <script src="js/desencriptar.js"></script>
+</body>
+
+
+</html>
