@@ -5,9 +5,8 @@
 }
 
 header{
-    background: url("imagenes/binario.jpeg");
-     width: 100%;
-     
+    background-image: url("/imagenes/binario.jpg");
+    width: 100%;   
 }
 
 .logo{
@@ -23,7 +22,7 @@ header{
     display: inline-block;
     font-size: 35px;
     margin: 15px 15px 15px auto;
-    color:rgb(147, 147, 147); 
+    color:rgb(248, 237, 237); 
 }
 
 .fondo{
@@ -86,6 +85,7 @@ header{
     height: 375px;
     padding: 10px;
     margin: 0 auto;
+    word-wrap: break-word;
 
 }
 
@@ -145,7 +145,7 @@ header{
     border: 1px solid #0a3871;
     border-radius: 24px;
     display: block;
-    visibility: hidden;   
+    
 }
 
 footer{
@@ -156,6 +156,78 @@ footer{
 
 .copyright{
     color:#FFFFFF;
-    font-size: 11px;
+    font-size: 15px;
     margin: 20px;
+}
+
+@media(max-width:480px){
+header{
+    text-align: center;
+}
+.logo{
+    margin: 40px 10px 0 0;
+}
+.titulo{
+    text-align: center;
+    font-size: 25px;
+    margin: auto;
+}
+.mensajeIngresado{
+    width: 80%;
+    display: inline;
+    text-align: center;
+}    
+
+.ingresado{
+    padding: 15px;
+}
+.mensajeProcesado{
+    width: 80%;
+    position: relative;
+    margin: auto;
+}
+
+
+.btn{
+    width: 90%;   
+}
+
+#encriptar{
+    width: 75%;
+}
+
+#desencriptar{
+    width: 75%;
+    margin-top: 10px;
+}
+
+#copiar{
+    width: 75%;
+    margin-top: 5px;
+}
+}
+
+@media(max-width:768px){
+.titulo{
+    width: 95%;
+    text-align: center;
+}    
+.mensajeIngresado{
+    width: 90%;
+    text-align: center;
+}
+
+.mensajeProcesado{
+    width: 90%;
+    position: relative;
+}
+.munheco{
+    width: 50%;
+    margin-top: 0;
+}
+
+.btn{
+    width: 90%;
+    margin: auto;
+}
 }

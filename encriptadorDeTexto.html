@@ -12,8 +12,6 @@
 <body>
     
     <header>
-        <div class="container">
-            
             <img class="logo" src="imagenes/logo.jpg">
             <h1 class="titulo">Encriptador/Desencriptador de textos</h1>
         </div>
@@ -22,7 +20,7 @@
     <main class="fondo">
         <section class="mensajeIngresado">
             <div class="ingresado">
-                <textarea id="texto-ingresado" cols="70" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+                <textarea id="texto-ingresado" cols="70" rows="10" placeholder="Ingrese el texto aqui" ></textarea>
                 <img src="imagenes/atencion.png" alt="atencion" class="atencion">
                 <p>Solo letras minusculas y sin acentos</p>
                
@@ -40,7 +38,7 @@
                     <img src="imagenes/Munheco.png" class="munheco">
                     <h4>Ningún mensaje fue encontrado</h4>
                 </div> 
-                <button class="btn" id="copiar">Copiar</button>   
+                <button class="btn" id="copiar" onclick="copy()">Copiar</button>   
             </div>
         
     </main>
@@ -51,6 +49,5 @@
     <script src="js/encriptar.js"></script> 
     <script src="js/desencriptar.js"></script>
 </body>
-
 
 </html>
