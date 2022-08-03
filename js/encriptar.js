@@ -11,7 +11,6 @@ btnEncriptar.addEventListener("click", function(event){
     validar();
     encriptar(textoIngresado);
     document.getElementById("texto-ingresado").value = "";   
-   console.log(textoIngresado);
 })
 
 function encriptar(textoIngresado){
